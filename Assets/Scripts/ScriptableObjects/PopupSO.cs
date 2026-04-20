@@ -9,11 +9,17 @@ public class PopupSO : ScriptableObject
 
     public void LoadPopupIntoDictionary(Dictionary<string,Popup> dictionary,Transform attachToParent)
     {
-        GameObject popupInstance =Instantiate(_prefab,attachToParent);
-        var popupComponent = popupInstance.GetComponent<Popup>();
-        popupInstance.SetActive(false);
+         
+        var popupComponent = LoadPopup( attachToParent);
+        popupComponent.gameObject.SetActive(false);
        
 
         dictionary.Add(_uniqueName, popupComponent);
+    }
+
+    public Popup LoadPopup(Transform attachToParent)
+    {
+        GameObject popupInstance = Instantiate(_prefab, attachToParent);
+        return popupInstance.GetComponent<Popup>();
     }
 }
