@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013e7e18c93a9b840b7a8c2e1816ef5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenShake
-  _duration: 1
-  _magnitude: 0.2
+  _duration: 0.8
+  _magnitude: 0.1

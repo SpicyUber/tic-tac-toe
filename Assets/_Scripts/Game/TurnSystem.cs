@@ -29,6 +29,7 @@ public class TurnSystem : MonoBehaviour
         IncrementTurnCountForPlayerAt(_currentTurnPlayerIndex);
 
         InvokeTurnEndedEvent();
+
     }
 
     public int GetTurnCountForPlayer(int playerIndex)=>_playerTurnCounts[playerIndex];

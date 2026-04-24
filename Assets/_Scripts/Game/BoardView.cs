@@ -47,7 +47,7 @@ public class BoardView : MonoBehaviour
 
     }
 
-    public void DrawLine(Vector3 firstPointWorldSpace, Vector3 secondPointWorldSpace, BoardCellState state, Material lineMaterial ,float durationInSeconds = 2f)
+    public void DrawLine(Vector3 firstPointWorldSpace, Vector3 secondPointWorldSpace, BoardCellState state, Material lineMaterial ,float durationInSeconds = 1.5f)
     {
         LineRenderer line = new GameObject().AddComponent<LineRenderer>();
         line.useWorldSpace = true;

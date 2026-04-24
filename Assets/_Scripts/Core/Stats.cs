@@ -7,8 +7,8 @@ public class Stats : SingletonPersistent<Stats>
     {
         get
         {
-            if(_gamesPlayed <= 0) return 0;
-            return _totalPlayTimeInSeconds / _gamesPlayed;
+            if(GamesPlayed <= 0) return 0;
+            return _totalPlayTimeInSeconds / GamesPlayed;
         }
 
     }
@@ -31,10 +31,10 @@ public class Stats : SingletonPersistent<Stats>
         private set { PlayerPrefs.SetInt(_keywords.DrawCount, value); }
     }
 
-    private int _gamesPlayed
+    public int GamesPlayed
     {
         get { return PlayerPrefs.GetInt(_keywords.GamesPlayed); }
-        set { PlayerPrefs.SetInt(_keywords.GamesPlayed, value); }
+        private set { PlayerPrefs.SetInt(_keywords.GamesPlayed, value); }
     }
 
     private float _totalPlayTimeInSeconds
@@ -58,7 +58,7 @@ public class Stats : SingletonPersistent<Stats>
         }
 
         _totalPlayTimeInSeconds += matchData.durationInSeconds;
-        _gamesPlayed++;
+        GamesPlayed++;
 
     }
 }

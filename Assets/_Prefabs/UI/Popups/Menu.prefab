@@ -869,11 +869,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5357719496176513589, guid: d5af3ed07ee6190409f48f86e60521da, type: 3}
+      propertyPath: handlers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357719496176513589, guid: d5af3ed07ee6190409f48f86e60521da, type: 3}
+      propertyPath: 'handlers.Array.data[1]'
+      value: 
+      objectReference: {fileID: 65730196997663691}
+    - target: {fileID: 5357719496176513589, guid: d5af3ed07ee6190409f48f86e60521da, type: 3}
+      propertyPath: 'handlers.Array.data[2]'
+      value: 
+      objectReference: {fileID: 65730196997663691}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4623271437128468148, guid: d5af3ed07ee6190409f48f86e60521da, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 65730196997663691}
+    - targetCorrespondingSourceObject: {fileID: 4623271437128468148, guid: d5af3ed07ee6190409f48f86e60521da, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8103819112007181230}
   m_SourcePrefab: {fileID: 100100000, guid: d5af3ed07ee6190409f48f86e60521da, type: 3}
+--- !u!1 &2743432947002341549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4623271437128468148, guid: d5af3ed07ee6190409f48f86e60521da, type: 3}
+  m_PrefabInstance: {fileID: 7366632637842980377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &65730196997663691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743432947002341549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e037559e71b359941bf3fcb72009abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowPopupOnClick
+  _popupSO: {fileID: 11400000, guid: f17f994bba8fba04494f36124b589d1a, type: 2}
+--- !u!114 &8103819112007181230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743432947002341549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301e52bbbc6e7e74a81f6ed9e8f4ab70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaySFXOnClick
+  SFX: {fileID: 8300000, guid: ce202605cd136ab4eb961e46eeeff039, type: 3}
 --- !u!224 &3421926055997630393 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5280073383945017760, guid: d5af3ed07ee6190409f48f86e60521da, type: 3}

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class StatsDisplay : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI P1Wins, P2Wins,Draws,AverageGameDuration;
+    [SerializeField] TextMeshProUGUI P1Wins, P2Wins,Draws,AverageGameDuration, TotalMatchesCount;
 
     private void OnEnable()
     {
@@ -12,6 +12,6 @@ public class StatsDisplay : MonoBehaviour
         P2Wins.text = Stats.Instance.Player2WinCount.ToString(); 
         Draws.text = Stats.Instance.DrawCount.ToString(); 
         AverageGameDuration.text = TimerDisplay.FormatTime((int)Stats.Instance.AverageGamesDurationInSeconds);
-
+        TotalMatchesCount.text = Stats.Instance.GamesPlayed.ToString();
     }
 }
