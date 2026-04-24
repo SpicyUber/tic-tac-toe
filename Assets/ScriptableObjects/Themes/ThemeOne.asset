@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ThemeSO
   XSprite: {fileID: -1591213528, guid: 16b5f8dda4db5d348a88a6ed7e5d6049, type: 3}
   OSprite: {fileID: 279105457, guid: 16b5f8dda4db5d348a88a6ed7e5d6049, type: 3}
+  XColor: {r: 1, g: 0.11764707, b: 0.12941177, a: 1}
+  OColor: {r: 0.11764705, g: 0.94310015, b: 1, a: 1}
