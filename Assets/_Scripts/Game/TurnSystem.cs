@@ -16,7 +16,7 @@ public class TurnSystem : MonoBehaviour
     private int _currentTurnPlayerIndex;
 
     public int CurrentTurnPlayerIndex { get => _currentTurnPlayerIndex; }
-    public bool MaxTurnsReached { get => _totalTurnCounts >= _maxTurns; }
+    public bool MaxTurnsReached { get => _hasMaxTurns && _totalTurnCounts >= _maxTurns; }
     public TurnSystemState State { get; private set; }
 
 
