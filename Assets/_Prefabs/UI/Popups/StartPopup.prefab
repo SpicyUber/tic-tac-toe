@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf9935e9d0fd284e8823db7719a6c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeSceneOnClick
-  _scene: {fileID: 102900000, guid: 0c31a6b5d7b9b2744a2a727d17d4e5d1, type: 3}
+  _sceneName: GameScene
   _popupToClose: {fileID: 2182108159562984270}
 --- !u!114 &6260610503419259948
 MonoBehaviour:
@@ -2314,7 +2314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf9935e9d0fd284e8823db7719a6c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeSceneOnClick
-  _scene: {fileID: 102900000, guid: 0c31a6b5d7b9b2744a2a727d17d4e5d1, type: 3}
+  _sceneName: GameScene
   _popupToClose: {fileID: 2182108159562984270}
 --- !u!114 &3002171198654684065
 MonoBehaviour:

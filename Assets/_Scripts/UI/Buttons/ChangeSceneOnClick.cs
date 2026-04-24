@@ -1,12 +1,11 @@
 using System.Collections;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ChangeSceneOnClick : MonoBehaviour, IClickHandler
 {
-    [SerializeField] SceneAsset _scene;
+    [SerializeField] string _sceneName;
     [SerializeField] Popup _popupToClose;
      
     
@@ -30,7 +29,7 @@ public class ChangeSceneOnClick : MonoBehaviour, IClickHandler
         UIManager.Instance.ClearDefault();
         yield return new WaitForSeconds(delayInSeconds);
         _button.interactable = true;
-        SceneManager.LoadScene(_scene.name);
+        SceneManager.LoadScene(_sceneName);
         
         UIManager.Instance.ClosePopup(_popupToClose);
     }
