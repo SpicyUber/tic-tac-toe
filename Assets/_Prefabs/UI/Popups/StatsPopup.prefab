@@ -74,8 +74,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289646651
-  m_fontColor: {r: 0.23137255, g: 0.81568635, b: 0.68235296, a: 1}
+    rgba: 4290959735
+  m_fontColor: {r: 0.46858314, g: 0.8490566, b: 0.7619991, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1803,8 +1803,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291836772
-  m_fontColor: {r: 0.39215687, g: 0.23137255, b: 0.8156863, a: 1}
+    rgba: 4293697974
+  m_fontColor: {r: 0.7127426, g: 0.63234246, b: 0.9245283, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1940,8 +1940,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291836772
-  m_fontColor: {r: 0.39215687, g: 0.23137255, b: 0.8156863, a: 1}
+    rgba: 4293697974
+  m_fontColor: {r: 0.7137255, g: 0.6313726, b: 0.9254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2068,7 +2068,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: AVERAGE LENGTH
+  m_text: AVG. LENGTH
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d55ceba79569af740ae76c8987f1205d, type: 2}
   m_sharedMaterial: {fileID: -5523361586872871958, guid: d55ceba79569af740ae76c8987f1205d, type: 2}
@@ -2077,8 +2077,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4290395088
-  m_fontColor: {r: 0.8156863, g: 0.2313725, b: 0.72976077, a: 1}
+    rgba: 4292773877
+  m_fontColor: {r: 0.9622642, g: 0.5310609, b: 0.8708066, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2214,8 +2214,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289646651
-  m_fontColor: {r: 0.23137255, g: 0.81568635, b: 0.68235296, a: 1}
+    rgba: 4290959735
+  m_fontColor: {r: 0.46666667, g: 0.8509804, b: 0.7607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2869,8 +2869,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282110119
-  m_fontColor: {r: 0.654902, g: 0.8156863, b: 0.23137255, a: 1}
+    rgba: 4282114559
+  m_fontColor: {r: 1, g: 0.88123155, b: 0.23113209, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3006,8 +3006,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4290395088
-  m_fontColor: {r: 0.8156863, g: 0.2313725, b: 0.72976077, a: 1}
+    rgba: 4292773877
+  m_fontColor: {r: 0.9607843, g: 0.5294118, b: 0.87058824, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3143,8 +3143,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282110119
-  m_fontColor: {r: 0.654902, g: 0.8156863, b: 0.23137255, a: 1}
+    rgba: 4282114559
+  m_fontColor: {r: 1, g: 0.88123155, b: 0.23113209, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3334,6 +3334,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwapBasedOnAspectRatio
   _wideObject: {fileID: 2231303847763491431}
   _tallObject: {fileID: 4619851449446980141}
+  _swappedObjects:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &7924675486797721710 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4844517723917046752, guid: d0375befee583914b8ca5155cb0c9aa0, type: 3}
@@ -3413,7 +3416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 531678865603754230, guid: cf4e5d8f36b55914fb024265aa59bf5a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 531678865603754230, guid: cf4e5d8f36b55914fb024265aa59bf5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

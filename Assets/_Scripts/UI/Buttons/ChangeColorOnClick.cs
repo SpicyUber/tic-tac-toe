@@ -13,6 +13,7 @@ public class ChangeColorOnClick : MonoBehaviour,IClickHandler
         {
             image.color = Color.white;
         }
+        if(_buttonImage)
         _buttonImage.color = _color;
     }
 }

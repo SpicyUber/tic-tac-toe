@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SwapBasedOnAspectRatio : MonoBehaviour
 {
- 
+
     [SerializeField] private GameObject _wideObject;
     [SerializeField] private GameObject _tallObject;
+    [SerializeField] private UnityEvent _swappedObjects;
 
     private bool? _lastIsWide = null;
 
@@ -15,10 +17,9 @@ public class SwapBasedOnAspectRatio : MonoBehaviour
 
     void Update()
     {
-        // Only re-evaluate if something actually changed
         bool isWide = Screen.width > Screen.height;
 
-        if (_lastIsWide == null || _lastIsWide != isWide)
+        if(_lastIsWide == null || _lastIsWide != isWide)
         {
             Apply();
         }
@@ -29,11 +30,13 @@ public class SwapBasedOnAspectRatio : MonoBehaviour
         bool isWide = Screen.width > Screen.height;
         _lastIsWide = isWide;
 
-        if (_wideObject != null)
+        if(_wideObject != null)
             _wideObject.SetActive(isWide);
 
-        if (_tallObject != null)
+        if(_tallObject != null)
             _tallObject.SetActive(!isWide);
+
+        _swappedObjects?.Invoke();
     }
- 
+
 }
